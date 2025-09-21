@@ -4,7 +4,7 @@ Sistema em Python para **ler notas fiscais em XML (NFe e NFS‑e)**, **extrair c
 
 ---
 
-## 📦 Visão geral
+### 📦 Visão geral
 
 O projeto percorre todos os arquivos XML dentro da pasta `nf/`, identifica se cada arquivo é **NFe (modelo 55)** ou **NFS‑e**, extrai informações básicas e salva o resultado em `NotasFiscais.xlsx` na raiz do projeto.
 
@@ -17,7 +17,7 @@ O projeto percorre todos os arquivos XML dentro da pasta `nf/`, identifica se ca
 
 ---
 
-## 🗂️ Estrutura sugerida de pastas
+### 🗂️ Estrutura sugerida de pastas
 
 ```
 notafiscalxml/
@@ -35,7 +35,7 @@ notafiscalxml/
 
 ---
 
-## ✅ Pré‑requisitos
+### ✅ Pré‑requisitos
 
 * Python 3.10+
 * Pip e (opcional) ambiente virtual (venv)
@@ -64,7 +64,7 @@ pip install -U pandas xmltodict openpyxl
 
 ---
 
-## ▶️ Como usar
+### ▶️ Como usar
 
 1. Coloque os arquivos `.xml` dentro da pasta `nf/` (pode misturar NFe e NFS‑e).
 2. Execute o script:
@@ -77,7 +77,7 @@ python main.py
 
 ---
 
-## 🔍 O que o script extrai (regra atual)
+### 🔍 O que o script extrai (regra atual)
 
 ### Quando o arquivo é **NFe**
 
@@ -103,7 +103,7 @@ python main.py
 
 ---
 
-## 📄 Exemplo de saída (colunas)
+### 📄 Exemplo de saída (colunas)
 
 | numero\_nota | empresa\_emissora             | nome\_cliente          | endereco |
 | ------------ | ----------------------------- | ---------------------- | -------- |
@@ -114,7 +114,7 @@ python main.py
 
 ---
 
-## ⚠️ Limitações e observações
+### ⚠️ Limitações e observações
 
 * **Namespaces**: se seus XMLs usam *namespaces* padrão (`xmlns="..."`), o `xmltodict` normalmente funciona sem configuração extra. Em casos específicos, pode ser necessário ajustar a parsing (ex.: `process_namespaces=True`) e os caminhos das chaves.
 * **Variedade de layouts**: NFe e NFS‑e possuem variantes municipais/UF. Se o layout divergir dos caminhos mostrados, será preciso adaptar os acessos no código (`main.py`).
@@ -122,7 +122,7 @@ python main.py
 
 ---
 
-## 🛠️ Customizações sugeridas
+### 🛠️ Customizações sugeridas
 
 ### 1) Tratar endereço em colunas
 
@@ -140,19 +140,19 @@ Para NFS‑e, crie *mapeadores* por provedor/município, garantindo extração r
 
 ---
 
-## 🧪 Testes rápidos
+### 🧪 Testes rápidos
 
 * Inclua 2 NFe e 2 NFS‑e na pasta `nf/` e rode o script
 * Abra `NotasFiscais.xlsx` e verifique se há 4 linhas e 4 colunas
 
 ---
 
-## 🤝 Contribuição
+### 🤝 Contribuição
 
 Sinta‑se à vontade para abrir *issues* e *pull requests* com melhorias (por exemplo: suportar mais campos, realizar *flatten* do endereço, validar schemas XSD, etc.).
 
 ---
 
-## 📄 Licença
+### 📄 Licença
 
 Defina a licença de sua preferência (MIT, Apache‑2.0, etc.).
