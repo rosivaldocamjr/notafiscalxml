@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompNfse xmlns="http://www.abrasf.org.br/nfse.xsd">
+  <Nfse>
+    <InfNfse Id="NFS-e-0001">
+      <Numero>1</Numero>
+      <CodigoVerificacao>ABC123</CodigoVerificacao>
+      <DataEmissao>2025-09-20T12:00:00-03:00</DataEmissao>
+      <PrestadorServico>
+        <IdentificacaoPrestador>
+          <Cnpj>12345678000199</Cnpj>
+          <InscricaoMunicipal>1234567</InscricaoMunicipal>
+        </IdentificacaoPrestador>
+        <RazaoSocial>Empresa Serviços Exemplo LTDA</RazaoSocial>
+        <Endereco>
+          <Endereco>Rua das Laranjeiras, 10</Endereco>
+          <Numero>10</Numero>
+          <Bairro>Centro</Bairro>
+          <CodigoMunicipio>1302603</CodigoMunicipio>
+          <Uf>AM</Uf>
+          <Cep>69000000</Cep>
+        </Endereco>
+      </PrestadorServico>
+      <TomadorServico>
+        <IdentificacaoTomador>
+          <CpfCnpj>
+            <Cpf>98765432100</Cpf>
+          </CpfCnpj>
+        </IdentificacaoTomador>
+        <RazaoSocial>Maria Santos</RazaoSocial>
+        <Endereco>
+          <Endereco>Av. Getúlio Vargas</Endereco>
+          <Numero>500</Numero>
+          <Bairro>Centro</Bairro>
+          <CodigoMunicipio>1302603</CodigoMunicipio>
+          <Uf>AM</Uf>
+          <Cep>69000000</Cep>
+        </Endereco>
+      </TomadorServico>
+      <Servico>
+        <Valores>
+          <ValorServicos>250.00</ValorServicos>
+          <IssRetido>2</IssRetido>
+          <Aliquota>0.0500</Aliquota>
+          <ValorIss>12.50</ValorIss>
+        </Valores>
+        <ItemListaServico>1.05</ItemListaServico>
+        <Discriminacao>Consultoria em TI - Suporte remoto (PF)</Discriminacao>
+        <CodigoMunicipio>1302603</CodigoMunicipio>
+      </Servico>
+    </InfNfse>
+  </Nfse>
+</CompNfse>
